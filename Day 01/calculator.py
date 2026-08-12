@@ -9,7 +9,7 @@ elif operation == "*":
     print(a * b)
 elif operation == "/" and b !=0:
     print(a / b)
-elif operation == "%":
+elif operation == "%" and b !=0:
     print(a % b)
 elif operation == "**":
     print(a ** b)
