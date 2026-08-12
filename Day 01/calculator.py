@@ -7,15 +7,17 @@ elif operation == "-":
     print(a - b)
 elif operation == "*":
     print(a * b)
-elif operation == "/":
+elif operation == "/" and b !=0:
     print(a / b)
 elif operation == "%":
     print(a % b)
+elif operation == "**":
+    print(a ** b)
 else:
-    print(a**b)
+    print("Invalid operation")
 # find error in below code
 name = input("Enter your name: ")
-age = input("Enter your age: ") # this taken as string so condition not check , we have to convert into int
+age = int(input("Enter your age: ")) # this taken as string so condition not check , we have to convert into int
 
 if age >= 18:
     print(name, "is an adult")
