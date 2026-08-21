@@ -96,6 +96,49 @@ marks = {"Maths": 91, "Physis": 58, "Chemistry":89}
 
 #function
 
-def sum(a,b):
-    print(a+b)
-print(sum(1,2))
+
+
+def sum(a, b):
+    return a + b
+
+print(sum(1, 2))
+
+def cal_gst(price):
+    new_price = price + price * 0.18
+    print(new_price)
+cal_gst(200)
+
+# inbuilt function
+print(len([1,2,3,4,5]))
+print(min([1,2,3,4,5]))
+print(type([1,2,3,4,5]))
+
+# module functions
+import math
+
+print(dir(math))
+
+from math import sqrt
+
+print(sqrt(16))
+
+# guessing game 
+import random
+
+def play_game():
+    lucky_num = random.randint(1,50)
+
+    while True:
+        user_num = int(input("Guess The Number"))
+
+        if user_num == lucky_num:
+            print("Wow!! YOU WON")
+            break
+        elif user_num < lucky_num:
+            print("Too low")
+        else:
+            print("Too High")
+
+    print("Thank You For Playing")
+
+play_game()
