@@ -60,3 +60,42 @@ for i in range(1,51):  #skip 15
         continue
     if(i % 3 == 0):
         print(i)
+
+#list
+marks = [99,85,74,84.50,80,"A"]   #collection of items we can use float , int, str 
+print(marks, type(marks), len(marks))
+
+#index 0 to start 
+print(marks[1])
+print(marks[-1]) # last side first 
+
+#slicing a list (some portion seperate) list[start:end]
+print(marks[0:4])
+print(marks[-3:])
+
+for score in marks:
+    print(score)
+
+# list are mutable , we can add or remove from that 
+marks.append(50)
+marks.insert(2, 75)
+print(marks)
+print(50 in marks)
+print(100 in marks)
+
+#tuple are immutable 
+marks = (99,85,74,84.50,80,"A")
+print(marks , type(marks))
+
+#set => unique items collection
+marks = {99,85,74,99,84,80,85}
+print(len(marks))
+
+#dictonary is collection of key=>value pair 
+marks = {"Maths": 91, "Physis": 58, "Chemistry":89}
+
+#function
+
+def sum(a,b):
+    print(a+b)
+print(sum(1,2))
